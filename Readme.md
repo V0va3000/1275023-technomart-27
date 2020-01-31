@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Владимир  Вальков](https://up.htmlacademy.ru/htmlcss/27/user/1275023).
-* Наставник: [Виктория Коваленко].(https://htmlacademy.ru/profile/id42638)
+* Наставник: [Виктория Коваленко](https://htmlacademy.ru/profile/id42638)
 
 ---
 
