@@ -9,22 +9,30 @@
 </head>
 <body>
     <header>
-        <ul>
-            <li><a href="index.html">Техномарт</a></li>
-            <li><a href="#">Поиск:</a></li>
-            <li><a href="#"></a>Закладки:</a></li>
-            <li><a href="#"></a>Корзина:</a></li>
-            <li><a href="#"></a>Оформить заказ</a></li>
-        </ul>
-        <p class="header_tagline">
+        <div class="header_menu">
+            <ul>
+                <li><a href="index.html">Техномарт</a></li>
+                <li>
+                    <form action="">
+                        <label>
+                            <input type="search" method="post" > Поиск:
+                        </label>
+                    </form>
+                </li>
+                <li><a href="#"></a>Закладки:</a></li>
+                <li><a href="#"></a>Корзина:</a></li>
+                <li><a href="#"></a>Оформить заказ</a></li>
+            </ul>
+        </div>
+        <h1 class="header_tagline">
             Интернет-магазин строительных материалов и инструментов для ремонта
-        </p>
+        </h1>
         <div class="header_information">
             <a href="tel:+7(812)555-05-55">+7(812)555-05-55</a>
             г. Санкт-Петербург, ул.Б.Конюшенная, д.19/8 
         </div>
-        <a class="open">Войти</a>
-        <a class="regisration">Регистрация</a>
+            <a class="open" href="#">Войти</a>
+            <a class="regisration" href="#">Регистрация</a>
         <nav>
             <ul>
                 <li><a href="#">Главная</a></li>
@@ -37,6 +45,7 @@
             </ul>
         </nav>
     </header>
+
     <main>
         <section>
             <ul>
@@ -204,7 +213,7 @@
                 <a href="#">Отправить заявку</a>
         </section>
         <section>
-            <h2>Компания "техномарт"</h2>
+            <h2>Компания "Техномарт"</h2>
             <p>
                 Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не
                 оставит равнодушными любителей сэкономить на гастарбайтерах.
@@ -229,11 +238,12 @@
             </p>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1580734286340!5m2!1sru!2sby" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="">
             </iframe>
-            <a href="#">Заблудились? Напишите нам!</a>
+            <button>Заблудились? Напишите нам!</button>
             <ul>
-                <li>Ваше имя:</li>
-                <li>Ваш e-mail:</li>
-                <li>Текст письма:</li>
+                <li>Ваше имя:<input name="name" type="text"></li>
+                <li>Ваш e-mail:<input name="mail" type="email"></li>
+                <li>Текст письма:<textarea name="coments" id="massage" cols="15" rows="10"></textarea></li>
+                <li><input type="submit" value="ОТПРАВИТЬ" method="post"></li>
             </ul>
         </section>
     </main>

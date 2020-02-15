@@ -23,8 +23,12 @@
             <a href="tel:+7(812)555-05-55">+7(812)555-05-55</a>
             г. Санкт-Петербург, ул.Б.Конюшенная, д.19/8 
         </div>
-        <a class="open"">Войти</a>
-        <a class="regisration" >Регистрация</a>
+            <div class="user">
+                <input type="text" name="user_name" id="u_name" value="Равшан Джамшутович">
+                <a class="out" href="#">Выйти</a>
+            </div>
+            <a class="order" href="#">Мои заказы</a>
+            <a class="cabinet" href="#">Личный кабинет</a>
         <nav>
             <ul>
                 <li><a href="#">Главная</a></li>
@@ -47,25 +51,30 @@
         <h2>Перфораторы</h2>
         <section>
             <h4>Фильтр:</h4>
-            <p>Цена:</p>
+            <p>
+                <label>
+                    Цена:
+                    <input type="range" name="cost_value" id="cost" min="0" max="30000" step="500">
+                </label>
+            </p>
         </section>
         <section>
             <h3>Производители</h3>
             <ul>
-                <li>Bosch</li>
-                <li>Интерскол</li>
-                <li>Makita</li>
-                <li>Dewalt</li>
-                <li>Hitachi</li>
+                <li><label><input type="checkbox" value="bosch" name="manufacturer"> Bosch</label></li>
+                <li><label><input type="checkbox" value="inter" name="manufacturer">Интерскол</label></li>
+                <li><label><input type="checkbox" value="makita" name="manufacturer">Makita</label></li>
+                <li><label><input type="checkbox" value="dewalt" name="manufacturer">Dewalt</label></li>
+                <li><label><input type="checkbox" value="hitachi" name="manufacturer">Hitachi</label></li>
             </ul>
         </section>
         <section>
             <h3>Питание:</h3>
             <ul>
-                <li>Аккумуляторные</li>
-                <li>Сетевые</li>
+                <li><label><input type="radio" name="power_supply" value="battery" checked >Аккумуляторные</label></li>
+                <li><label><input type="radio" name="power_supply" value="electric">Сетевые</label></li>
             </ul>
-            <button type="button">Показать</button>
+            <input type="submit" value="Показать">
         </section>
         <section>
             <p>Сортировка:</p>
