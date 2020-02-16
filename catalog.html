@@ -23,12 +23,10 @@
             <a href="tel:+7(812)555-05-55">+7(812)555-05-55</a>
             г. Санкт-Петербург, ул.Б.Конюшенная, д.19/8 
         </div>
-            <div class="user">
-                <input type="text" name="user_name" id="u_name" value="Равшан Джамшутович">
-                <a class="out" href="#">Выйти</a>
-            </div>
-            <a class="order" href="#">Мои заказы</a>
-            <a class="cabinet" href="#">Личный кабинет</a>
+        <a class="user_name" href="#">Равшан Джамшутович</a>
+        <a class="out" href="#"> Выйти</a>
+        <a class="order" href="#">Мои заказы</a>
+        <a class="cabinet" href="#">Личный кабинет</a>
         <nav>
             <ul>
                 <li><a href="#">Главная</a></li>
@@ -42,12 +40,6 @@
         </nav>
     </header>
     <main>
-        <div class="order_check">
-            <button name="cloced"></button>
-            <p>Товар добавлен в корзину</p>
-            <a href="#">Оформить заказ</a>
-            <button name="continue">Продолжить покупки</button>
-        </div>
         <ul>
             <li><a href="index.html">Главная</a></li>
             <li><a href="#">Каталог</a></li>
@@ -58,29 +50,31 @@
         <section>
             <h4>Фильтр:</h4>
             <p>
-                <label>
-                    Цена:
-                    <input type="range" name="cost_value" id="cost" min="0" max="30000" step="500">
-                </label>
+                <form action="">
+                    <label>
+                        Цена:
+                        <input type="range" name="cost_value" id="cost" min="0" max="30000" step="500">
+                    </label>
+                </form>
             </p>
         </section>
         <section>
             <h3>Производители</h3>
-            <ul>
-                <li><label><input type="checkbox" value="bosch" name="manufacturer"> Bosch</label></li>
-                <li><label><input type="checkbox" value="inter" name="manufacturer">Интерскол</label></li>
-                <li><label><input type="checkbox" value="makita" name="manufacturer">Makita</label></li>
-                <li><label><input type="checkbox" value="dewalt" name="manufacturer">Dewalt</label></li>
-                <li><label><input type="checkbox" value="hitachi" name="manufacturer">Hitachi</label></li>
-            </ul>
+            <form action="" method="GET">
+                <label><input type="checkbox" value="bosch" name="manufacturer"> Bosch</label>
+                <label><input type="checkbox" value="inter" name="manufacturer">Интерскол</label>
+                <label><input type="checkbox" value="makita" name="manufacturer">Makita</label>
+                <label><input type="checkbox" value="dewalt" name="manufacturer">Dewalt</label>
+                <label><input type="checkbox" value="hitachi" name="manufacturer">Hitachi</label>
+            </form>
         </section>
         <section>
             <h3>Питание:</h3>
-            <ul>
-                <li><label><input type="radio" name="power_supply" value="battery" checked >Аккумуляторные</label></li>
-                <li><label><input type="radio" name="power_supply" value="electric">Сетевые</label></li>
-            </ul>
-            <input type="submit" value="Показать">
+            <form action="" method="GET">
+                <label><input type="radio" name="power_supply" value="battery" checked >Аккумуляторные</label>
+                <label><input type="radio" name="power_supply" value="electric">Сетевые</label>
+                <input type="submit" value="Показать">
+            </form>
         </section>
         <section>
             <p>Сортировка:</p>
@@ -179,6 +173,12 @@
                  в одном устройстве будут совмещены отбойный молоток и ударная дрель.
             </p>
         </section>
+        <div class="order_check">
+            <button name="cloce_button"></button>
+            <p>Товар добавлен в корзину</p>
+            <a href="#">Оформить заказ</a>
+            <button name="continue">Продолжить покупки</button>
+        </div>
     </main>
     <footer>
         <section>
