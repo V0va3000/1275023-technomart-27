@@ -47,34 +47,25 @@
             <li>Перфораторы</li>
         </ul>
         <h2>Перфораторы</h2>
-        <section>
+        <form>
             <h4>Фильтр:</h4>
             <p>
-                <form action="">
-                    <label>
-                        Цена:
-                        <input type="range" name="cost_value" id="cost" min="0" max="30000" step="500">
-                    </label>
-                </form>
+                <label>
+                  Цена:
+                    <input type="range" name="cost_value" id="cost" min="0" max="30000" step="500">
+                </label>
             </p>
-        </section>
-        <section>
             <h3>Производители</h3>
-            <form action="" method="GET">
                 <label><input type="checkbox" value="bosch" name="manufacturer"> Bosch</label>
                 <label><input type="checkbox" value="inter" name="manufacturer">Интерскол</label>
                 <label><input type="checkbox" value="makita" name="manufacturer">Makita</label>
                 <label><input type="checkbox" value="dewalt" name="manufacturer">Dewalt</label>
                 <label><input type="checkbox" value="hitachi" name="manufacturer">Hitachi</label>
-            </form>
-        </section>
-        <section>
             <h3>Питание:</h3>
-            <form action="" method="GET">
                 <label><input type="radio" name="power_supply" value="battery" checked >Аккумуляторные</label>
                 <label><input type="radio" name="power_supply" value="electric">Сетевые</label>
-                <input type="submit" value="Показать">
-            </form>
+            <button type="submit">Показать</button>
+        </form>
         </section>
         <section>
             <p>Сортировка:</p>
@@ -174,7 +165,7 @@
             </p>
         </section>
         <div class="order_check">
-            <button name="cloce_button"></button>
+            <button name="close_button"></button>
             <p>Товар добавлен в корзину</p>
             <a href="#">Оформить заказ</a>
             <button name="continue">Продолжить покупки</button>
