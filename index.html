@@ -16,25 +16,26 @@
                 <li>
                     <form action="" method="post" class="search">
                         <label>
-                            <input type="image" src="img/svg/icon-search.svg">
                             <input type="search" placeholder="Поиск:">
                         </label>
-                    </form>                </li>
+                    </form>                
                 <li><a href="#" class="bookmarks">Закладки:</a></li>
                 <li><a href="#" class="basket">Корзина:</a></li>
                 <li><a href="#" class="order">Оформить заказ</a></li>
             </ul>
         </div>
-        <h1 class="header_tagline">
-            Интернет-магазин строительных материалов и инструментов для ремонта
-        </h1>
         <div class="header_information">
-            <a href="tel:+7(812)555-05-55">+7(812)555-05-55</a>
-            г. Санкт-Петербург, ул.Б.Конюшенная, д.19/8 
+            <h1 class="header_tagline">
+                Интернет-магазин строительных материалов и инструментов для ремонта
+            </h1>
+            <div class="address">
+                <a href="tel:+7(812)555-05-55" class="tel">+7(812)555-05-55</a>
+                г. Санкт-Петербург, ул.Б.Конюшенная, д.19/8
+            </div>
+            <a class="open" href="#">Войти</a>
+            <a class="regisration" href="#">Регистрация</a>
         </div>
-        <a class="open" href="#">Войти</a>
-        <a class="regisration" href="#">Регистрация</a>
-        <nav>
+        <nav class="header_menu bottom">
             <ul>
                 <li><a href="#">Главная</a></li>
                 <li><a href="#">Компания</a></li>
@@ -50,57 +51,63 @@
     <main>
         <section>
             <ul>
-                <li class="matireals">
+                <li class="item matireals">
                     <h2>Материалы</h2>
-                    <a href="#">
-                        <p>На любой вкус</p>
-                    </a>
+                    <p>
+                        <a class="name" href="#">На любой вкус</a>
+                    </p>
                 </li>
-                <li class="instryment">
+                <li class="item instryment">
                     <h2>Инструмент</h2>
-                    <a href="#">
-                        <p>На все случаи</p>
-                    </a>
+                    <p>
+                        <a class="name" href="#">На все случаи</a>
+                    </p>
                 </li>
-                <li class="equipment">
+                <li class="item equipment">
                     <h2>Техника</h2>
-                    <a href="#">
-                        <p>Для стройки</p>\
-                    </a>
+                    <p>
+                        <a class="name" href="#">Для стройки</a>
+                    </p>
                 </li>
-                <li class="sales">
+                <li class="item sales">
                     <h2>Скидки 50%</h2>
-                    <a href="#">
-                        <p>На 350 товаров</p>
-                    </a>
+                    <p>
+                        <a class="name" href="#">На 350 товаров</a>
+                    </p>
                 </li>
-                <li class="delivery">
+                <li class="item delivery">
                     <h2>Доставка</h2>
-                    <a href="#">
-                        <p>Бесплатно</p>
-                    </a>
+                    <p>
+                        <a href="#" class="name">Бесплатно</a>
+                    </p>
                 </li>
-                <li class="slider">
-                    <h2>Перфораторы</h2>
-                    <p>Настоящие мужские игрушки</p>
-                    <a href="#">Открыть каталог</a>
-                    <h2>Дрели</h2>
-                    <p>Соседям на радость!</p>
-                    <a href="#">Открыть каталог</a>
+                <li>
+                    <div class="slider">
+                        <div class="slider1">
+                            <h2>Перфораторы</h2>
+                            <p>Настоящие мужские игрушки</p>
+                            <a href="#" class="slider-name">Открыть каталог</a>
+                        </div>
+                        <div class="slider2">
+                            <h2>Дрели</h2>
+                            <p>Соседям на радость!</p>
+                            <a href="#" class="slider-name">Открыть каталог</a>
+                        </div>
+                    </div>
                 </li>
             </ul>
         </section>
-        <section>
+        <section class="products">
             <div class="popular">
                 <p>Популярные товары:</p>
-                <p><a href="#">Все популярные товары</a></p>
+                <p><a href="#" class="popular-name">Все популярные товары</a></p>
             </div>
             <ul>
                 <li>
                     <div class="catalog">
                         <img src="img/9000.jpg" alt="Перфоратор BOSH BFG 9000">
                         <a href="#">Перфоратор BOSH BFG 9000</a>
-                        <p>325000 Р.</p>
+                        <p class="grey">325000 Р.</p>
                         <p>255000 Р.</p>
                     </div>
                 </li>
@@ -108,101 +115,88 @@
                     <div class="catalog">
                         <img src="img/3000.jpg" alt="Перфоратор BOSH BFG 3000">
                         <a href="#">Перфоратор BOSH BFG 3000</a>
-                        <p>255000 Р.</p>
-                        <p>155000 Р.</p>
+                        <p class="grey">255000 Р.</p>
+                        <p class="red">155000 Р.</p>
                     </div>
                 </li>
                 <li>
                     <div class="catalog">
                         <img src="img/6000.jpg" alt="Перфоратор BOSH BFG 6000">
-                        <fa href="#">Перфоратор BOSH BFG 6000</a>
-                        <p>305000 Р.</p>
-                        <p>255000 Р.</p>
+                        <a href="#">Перфоратор BOSH BFG 6000</a>
+                        <p class="grey">305000 Р.</p>
+                        <p class="red">255000 Р.</p>
                     </div>
                 </li>
                 <li>
                     <div class="catalog">
                         <img src="img/2000.jpg" alt="Перфоратор BOSH BFG 2000">
                         <a href="#">Перфоратор BOSH BFG 2000</a>
-                        <p>125000 Р. </p>
+                        <p class="red">125000 Р. </p>
                     </div>
                 </li>
             </ul>
         </section>
         <section>
-            <p>Популярные производители:</p>
-            <p><a href="#">Все производители</a></p>
-            <ul>
+            <div class="popular">
+                 <p>Популярные производители:</p>
+                 <p><a href="#" class="popular-name">Все производители</a></p>
+            </div>
+            <ul class="firms">
                 <li>
-                    <figure>
-                        <a href="https://www.bosch-professional.com/">
-                            <img src="img/bosch.jpg" alt="bosch">
-                        </a>
-                    </figure>
+                    <a href="https://www.bosch-professional.com/">
+                        <img src="img/bosch.jpg" alt="bosch">
+                    </a>
                 </li>
                 <li>
-                    <figure>
-                        <a href="http://makita.ru/">
-                            <img src="img/makita.jpg" alt="makita">
-                        </a>
-                    </figure>
+                    <a href="http://makita.ru/">
+                      <img src="img/makita.jpg" alt="makita">
+                    </a>
                 </li>
                 <li>
-                    <figure>
-                        <a href="https://ru.dewalt.global/">
-                            <img src="img/dewalt.jpg" alt="dewalt">
-                        </a>
-                    </figure>
+                    <a href="https://ru.dewalt.global/">
+                       <img src="img/dewalt.jpg" alt="dewalt">
+                    </a>
                 </li>
                 <li>
-                    <figure>
-                        <a href="https://www.interskol.ru/">
-                            <img src="img/inter.jpg" alt="интерскол">
-                        </a>
-                    </figure>
+                    <a href="https://www.interskol.ru/">
+                       <img src="img/inter.jpg" alt="интерскол">
+                    </a>
                 </li>
                 <li>
-                    <figure>
-                        <a href="http://www.hitachi.com/">
-                            <img src="img/hitachi.jpg" alt="hitachi">
-                        </a>
-                    </figure>
+                    <a href="http://www.hitachi.com/">
+                       <img src="img/hitachi.jpg" alt="hitachi">
+                    </a>
                 </li>
                 <li>
-                    <figure>
-                        <a href="https://www.lg.com/ru">
-                            <img src="img/lg.jpg"  alt="lg">
-                        </a>
+                    <a href="https://www.lg.com/ru">
+                       <img src="img/lg.jpg"  alt="lg">
+                    </a>
                 </li>
                 <li>
-                    <figure>
-                        <a href="https://www.aeg.ru/">
-                            <img src="img/aeg.jpg" alt="aeg">
-                        </a>
-                    </figure>
+                    <a href="https://www.aeg.ru/">
+                       <img src="img/aeg.jpg" alt="aeg">
+                    </a>
                 </li>
                 <li>
-                    <figure>
-                        <a href="https://www.metabo.com/ru/ru/">
-                            <img src="img/Metabo.jpg" alt="metabo">
-                        </a>
-                    </figure>
+                    <a href="https://www.metabo.com/ru/ru/">
+                        <img src="img/metabo.jpg" alt="metabo">
+                    </a>
                 </li>
             </ul>
         </section>
-        <section>
-            <h2>Сервисы</h2>
-                <p>Хороший интернет-магазин отличается от плохого не только ценами! 
+        <section class="col">
+            <h2 class="service">Сервисы</h2>
+                <p class="description">Хороший интернет-магазин отличается от плохого не только ценами! 
                 Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
             <h3>Доставка</h3>
                 <h4>Доставка</h4>
-                <p>Мы с удовольствием доставим ваш товар прямо
+                <p class="description">Мы с удовольствием доставим ваш товар прямо
                 к вашему подъезду совершенно бесплатно! 
                 Ведь мы неплохо заработаем, 
                 поднимая его на ваш этах!</p>
             <h3>Гарантия</h3>
                 <h4>Гарантия</h4>
-                <p>Если купленный у нас товар поломается или заискрит, 
+                <p class="description">Если купленный у нас товар поломается или заискрит, 
                 а также в случае пожара, спровоцированного его возгоранием, 
                 вы всегда можете быть уверены в нашей гарантии. Мы обменяем 
                 сгоревший товар на новый</p>
@@ -247,7 +241,6 @@
                 <button type="submit">Отправить</button>
             </form>
         </section>
-        <!--Продолжение задания-->
     </main>
     <footer>
         <section>
