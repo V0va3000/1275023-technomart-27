@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i|PT+Sans:400,400i,700,700i&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
     <title>Техномарт</title>
 </head>
 <body>
-    <header>
+    <header class="header">
         <div class="header_menu">
+            <a href="index.html" class="logo">Техномарт</a>
             <ul>
-                <li><a href="index.html" class="label">Техномарт</a></li>
                 <li>
                     <form action="" method="post" class="search">
                         <label>
@@ -35,9 +35,9 @@
             <a class="open" href="#">Войти</a>
             <a class="regisration" href="#">Регистрация</a>
         </div>
-        <nav class="header_menu bottom">
+        <nav class="bottom">
             <ul>
-                <li><a href="#">Главная</a></li>
+                <li><a href="index.html">Главная</a></li>
                 <li><a href="#">Компания</a></li>
                 <li><a href="catalog.html">Каталог</a></li>
                 <li><a href="#">Новости</a></li>
@@ -51,13 +51,13 @@
     <main>
         <section>
             <ul>
-                <li class="item matireals">
+                <li class="item matereals">
                     <h2>Материалы</h2>
                     <p>
                         <a class="name" href="#">На любой вкус</a>
                     </p>
                 </li>
-                <li class="item instryment">
+                <li class="item instruments">
                     <h2>Инструмент</h2>
                     <p>
                         <a class="name" href="#">На все случаи</a>
@@ -100,38 +100,38 @@
         <section class="products">
             <div class="popular">
                 <p>Популярные товары:</p>
-                <p><a href="#" class="popular-name">Все популярные товары</a></p>
+                <a href="#" class="popular-name">Все популярные товары</a>
             </div>
             <ul>
                 <li>
                     <div class="catalog">
                         <img src="img/9000.jpg" alt="Перфоратор BOSH BFG 9000">
                         <a href="#">Перфоратор BOSH BFG 9000</a>
-                        <p class="grey">325000 Р.</p>
-                        <p>255000 Р.</p>
+                        <p class="old-price">325000 Р.</p>
+                        <p class="new-price">255000 Р.</p>
                     </div>
                 </li>
                 <li>
                     <div class="catalog">
                         <img src="img/3000.jpg" alt="Перфоратор BOSH BFG 3000">
                         <a href="#">Перфоратор BOSH BFG 3000</a>
-                        <p class="grey">255000 Р.</p>
-                        <p class="red">155000 Р.</p>
+                        <p class="old-price">255000 Р.</p>
+                        <p class="new-price">155000 Р.</p>
                     </div>
                 </li>
                 <li>
                     <div class="catalog">
                         <img src="img/6000.jpg" alt="Перфоратор BOSH BFG 6000">
                         <a href="#">Перфоратор BOSH BFG 6000</a>
-                        <p class="grey">305000 Р.</p>
-                        <p class="red">255000 Р.</p>
+                        <p class="old-price">305000 Р.</p>
+                        <p class="new-price">255000 Р.</p>
                     </div>
                 </li>
                 <li>
                     <div class="catalog">
                         <img src="img/2000.jpg" alt="Перфоратор BOSH BFG 2000">
                         <a href="#">Перфоратор BOSH BFG 2000</a>
-                        <p class="red">125000 Р. </p>
+                        <p class="new-price">125000 Р. </p>
                     </div>
                 </li>
             </ul>
@@ -139,7 +139,7 @@
         <section>
             <div class="popular">
                  <p>Популярные производители:</p>
-                 <p><a href="#" class="popular-name">Все производители</a></p>
+                 <a href="#" class="popular-name">Все производители</a>
             </div>
             <ul class="firms">
                 <li>
@@ -188,35 +188,35 @@
             <h2 class="service">Сервисы</h2>
                 <p class="description">Хороший интернет-магазин отличается от плохого не только ценами! 
                 Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-            <h3>Доставка</h3>
-                <h4>Доставка</h4>
-                <p class="description">Мы с удовольствием доставим ваш товар прямо
+            <h3 class="col-top delivery">Доставка</h3>
+                <h4 class="col-head">Доставка</h4>
+                <p class="description-col">Мы с удовольствием доставим ваш товар прямо
                 к вашему подъезду совершенно бесплатно! 
                 Ведь мы неплохо заработаем, 
                 поднимая его на ваш этах!</p>
-            <h3>Гарантия</h3>
-                <h4>Гарантия</h4>
-                <p class="description">Если купленный у нас товар поломается или заискрит, 
+            <h3 class="col-top warranty">Гарантия</h3>
+                <h4 class="col-head">Гарантия</h4>
+                <p class="description-col">Если купленный у нас товар поломается или заискрит, 
                 а также в случае пожара, спровоцированного его возгоранием, 
                 вы всегда можете быть уверены в нашей гарантии. Мы обменяем 
                 сгоревший товар на новый</p>
-                <p>Дом уж восстановлению как-нибудь сами.</p>
-            <h3>Кредит</h3>
-                <h4>Кредит</h4>
-                <p>Залезть в долговую яму стало проще!</p>
-                <p>Кредитные консультанты придут к вам на помощь.</p>
-                <a href="#">Отправить заявку</a>
+                <p class="description-col">Дом уж восстановлению как-нибудь сами.</p>
+            <h3 class="col-top credit">Кредит</h3>
+                <h4 class="col-head">Кредит</h4>
+                <p class="description-col">Залезть в долговую яму стало проще!</p>
+                <p class="description-col">Кредитные консультанты придут к вам на помощь.</p>
+                <a href="#" class="buttom-credit">Отправить заявку</a>
         </section>
-        <section>
-            <h2>Компания "Техномарт"</h2>
-            <p>
+        <section class="about">
+            <h2 class="service">Компания "Техномарт"</h2>
+            <p class="description-col">
                 Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не
                 оставит равнодушными любителей сэкономить на гастарбайтерах.
             </p>
-            <p>
+            <p class="description-col">
                 Мы можем доставить ваш товар в самые отдаленные точки России!
             </p>
-            <p>
+            <p class="description-col">
                 Техномарт работает со многими транспортными компаниями:
             </p>
             <ul>
@@ -225,16 +225,14 @@
                 <li>ЖелДорЭкспедиция</li>
             </ul>
             <a href="#">Подробнее о компании</a>
-        </section>
-        <section>
-            <h2>Контакты</h2>
-            <p>
+            <h2 class="service" class="buttom-credit">Контакты</h2>
+            <p class="description-col">
                 Вы можете забрать товар сами, заехав в наш офис:
             </p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1580734286340!5m2!1sru!2sby" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1580734286340!5m2!1sru!2sby" width="300" height="160" frameborder="0" style="border:0;" allowfullscreen="">
             </iframe>
-            <a href="#">Заблудились? Напишите нам!</a>
-            <form action="#" method="GET">
+            <a href="#" class="buttom-credit">Заблудились? Напишите нам!</a>
+            <form action="#" method="GET" class="lost">
                 <label>Ваше имя:<input name="name" type="text"></label>
                 <label>Ваш e-mail:<input name="mail" type="email"></label>
                 <label>Текст письма:<textarea name="coments" id="massage" cols="15" rows="10"></textarea></label>>
@@ -243,10 +241,10 @@
         </section>
     </main>
     <footer>
-        <section>
-             <p>
+        <section class="footer-top">
+             <a href="index.html" class="logo logo-buttom">
                 Техномарт
-             </p>
+             </a>
              <ul>
                  <li><a href="#">Компания</a></li>
                  <li><a href="#">Новости</a></li>
@@ -255,8 +253,8 @@
                  <li><a href="#">Контакты</a></li>
              </ul> 
         </section>
-        <section>
-            <p>
+        <section class="footer-midle">
+            <p class="addres">
                 г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8
                 <a href="tel:+7(812)555-05-55">+7(812)555-05-55</a>
             </p>
@@ -267,7 +265,7 @@
                 <li><a href="#">Спецпредложения</a></li>
             </ul>
         </section>
-        <section>
+        <section class="footer-bottom">
             <p>&copy; 2010-2019 Компания "Техномарт" Все права защищены</p>
             <ul>
                 <li><a href="#">Вконтакте</a></li>

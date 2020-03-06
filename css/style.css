@@ -8,7 +8,6 @@
 
 body {
     margin: 0 auto;
-    width: 100%;
     max-width: 940px;
     background-color: white;
     font-size: 17px;
@@ -19,7 +18,7 @@ a {
 }
 
 /*header*/
-header {
+.header {
     background-color: #F3F7FA;
 }
 
@@ -29,7 +28,9 @@ header {
 }
 
 .bottom {
-    box-shadow: 0 5px 0 0 #2B3547;
+    background-color: #293448;
+    line-height: 40px;
+    box-shadow: 0 5px 0 0 #1e2639;
 }
 
 .bottom a:hover {
@@ -41,7 +42,7 @@ header {
     color: #9FA3AE;
 }
 
-.label {
+.logo {
     background-color: #EE3642;
     box-shadow:0 5px 0 0 #B62833;
     text-transform: uppercase;
@@ -49,12 +50,12 @@ header {
     font-weight: bold;
 }
 
-.label:hover {
+.logo:hover {
     background-color: #C92C37;
     box-shadow: 0 5px 0 0 #9C2029;
 }
 
-.label:active {
+.logo:active {
     background-color: #BA2632;
     box-shadow: 0 5px 0 0 #8D2124;
 }
@@ -145,7 +146,8 @@ header {
 
 /*main*/
 .item {
-    font: 24px bold;
+    font-size: 24px;
+    font-weight: bold;
 }
 
 .name {
@@ -161,14 +163,14 @@ header {
     background-color: rgba(0, 0, 0, 0.3);
 }
 
-.matireals {
+.matereals {
     background:
      #FFBE46
      url(../img/svg/icon-1.svg)
      no-repeat;
 }
 
-.instryment {
+.instruments {
     background:
      url(../img/svg/icon-2.svg)
      no-repeat
@@ -220,7 +222,7 @@ header {
 }
 
 .slider-name {
-    font: 14px;
+    font-size: 14px;
     text-align: center;
     text-transform: uppercase;
     background: #EE3642;
@@ -234,9 +236,12 @@ header {
     background: #BA2632;
 }
 
-.popular p {
+.popular {
     background: #F9F6F1;
     font-size: 30px;
+}
+
+.popular p {
     text-transform: uppercase;
     color: #000000;
 }
@@ -253,7 +258,7 @@ header {
     margin: 20px 20px 20px 0;
     padding: 20px;
     text-align: center;
-    font-family: "PT Sans";
+    font-family: "PT Sans", serif;
     font-weight: bold;
 }
 
@@ -265,12 +270,12 @@ header {
     color: #000000;
 }
 
-.grey {
+.old-price {
     color: #778899;
     text-decoration: line-through;
 }
 
-.catalog .red {
+.catalog .new-price {
     background: #EE3642;
     border: solid 0;
     border-radius: 4px;
@@ -305,6 +310,87 @@ header {
 
 .description {
     font-size: 13px;
-    font-family: "PT sans";
+    font-family: "PT sans", serif;
     color: #000000;
+}
+
+.col-top {
+    font-size: 21px;
+    color: #ffffff;
+    font-weight: bold;
+    background-color: #32425c;
+    font-family: "Cuorum", serif;
+}
+
+.col-top:active {
+    color: #32425c;
+    background-color: #ffffff;
+}
+
+.col-head {
+    font-size: 36px;
+    font-family: "Cuprum", serif;
+    text-transform: uppercase;
+    color: #32425c;
+}
+
+.description-col {
+    color: #000000;
+    font-family: "PT sans" serif;
+    font-size: 13px;
+}
+
+.delivery {
+    background-image: url(../img/dost.jpg);
+    background-repeat: no-repeat;
+}
+
+.warranty {
+    background-image: url(../img/garant.jpg);
+    background-repeat: no-repeat;
+}
+
+.credit {
+    background-image: url(../img/cred.jpg);
+    background-repeat: no-repeat;
+}
+
+.buttom-credit {
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    background: #EE3642;
+    font-family: "Cuprum", serif;
+}
+
+.about li {
+    list-style-type: none;
+    list-style-image: url(../img/list-style.jpg);
+    color: #000000;
+    font-size: 18px;
+}
+
+.lost {
+    display: none;
+}
+
+.footer-top {
+    background-color: #32425C;
+    font-size: 18px;
+}
+
+.footer-midle {
+    background-color: #293448;
+}
+
+.footer-midle ul {
+    color: #FACD89;
+}
+
+.addres {
+    color: #ffffff;
+}
+
+.footer-bottom {
+    background-color: #293448;
 }
