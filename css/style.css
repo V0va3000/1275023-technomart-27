@@ -43,11 +43,13 @@ a {
 }
 
 .logo {
+    float: left;
+    width: 220px;
     background-color: #EE3642;
     box-shadow:0 5px 0 0 #B62833;
     text-transform: uppercase;
     text-align: center;
-    font-weight: bold;
+    font-size: 30px;
 }
 
 .logo:hover {
@@ -163,7 +165,7 @@ a {
     background-color: rgba(0, 0, 0, 0.3);
 }
 
-.matereals {
+.materials {
     background:
      #FFBE46
      url(../img/svg/icon-1.svg)
@@ -198,13 +200,13 @@ a {
      #FEC047;
 }
 
-.slider1 {
+.slider-one {
     background:
      no-repeat
      url(../img/job.jpg);
 }
 
-.slider2 {
+.slider-two {
     background:
      url(../img/job2.jpg)
      no-repeat;
